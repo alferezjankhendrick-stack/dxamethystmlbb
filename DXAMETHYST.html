@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DXAMETHYSTMLBBRECRUIT.com</title>
+<style>
+:root {
+--bg-color: #0d0f17;
+--card-bg: rgba(22, 27, 38, 0.88);
+--accent-purple: #8a2be2;
+--accent-glow: #9d4edd;
+--text-color: #f1f1f1;
+--input-bg: rgba(15, 19, 29, 0.9);
+--border-color: #2a324b;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: var(--bg-color);
+background-image: linear-gradient(rgba(13, 15, 23, 0.75), rgba(13, 15, 23, 0.75)), url('1.jpg');
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+color: var(--text-color);
+margin: 0;
+padding: 20px;
+display: flex;
+justify-content: center;
+min-height: 100vh;
+}
+
+.container {
+position: relative;
+width: 100%;
+max-width: 850px;
+background: var(--card-bg);
+border: 1px solid var(--border-color);
+border-radius: 12px;
+padding: 25px;
+box-shadow: 0 0 25px rgba(0, 0, 0, 0.7), 0 0 15px rgba(138, 43, 226, 0.3);
+backdrop-filter: blur(8px);
+}
+
+.top-admin-btn {
+position: absolute;
+top: 20px;
+right: 20px;
+width: auto;
+padding: 8px 14px;
+font-size: 13px;
+background: #2a324b;
+border: 1px solid var(--border-color);
+color: #fff;
+border-radius: 6px;
+cursor: pointer;
+font-weight: 600;
+transition: 0.3s ease;
+text-decoration: none;
+display: inline-block;
+}
+
+.top-admin-btn:hover {
+background: var(--accent-purple);
+}
+
+header {
+text-align: center;
+border-bottom: 2px solid var(--border-color);
+padding-bottom: 15px;
+margin-bottom: 25px;
+margin-top: 10px;
+}
+
+.site-logo {
+max-width: 140px;
+height: auto;
+margin-bottom: 10px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+filter: drop-shadow(0 0 10px rgba(157, 78, 221, 0.5));
+}
+
+h1 {
+color: var(--accent-glow);
+text-transform: uppercase;
+letter-spacing: 2px;
+margin: 0;
+font-size: 24px;
+}
+
+.subtitle {
+font-size: 14px;
+color: #aaa;
+margin-top: 5px;
+}
+
+.form-group {
+margin-bottom: 18px;
+}
+
+label {
+display: block;
+margin-bottom: 6px;
+font-weight: 600;
+font-size: 14px;
+}
+
+input, select {
+width: 100%;
+padding: 12px;
+background-color: var(--input-bg);
+border: 1px solid var(--border-color);
+border-radius: 6px;
+color: #fff;
+box-sizing: border-box;
+font-size: 14px;
+}
+
+input:focus, select:focus {
+outline: none;
+border-color: var(--accent-purple);
+box-shadow: 0 0 8px rgba(138, 43, 226, 0.4);
+}
+
+.inline-group {
+display: flex;
+gap: 15px;
+}
+
+.inline-group .form-group {
+flex: 1;
+}
+
+.btn {
+width: 100%;
+padding: 12px;
+background: linear-gradient(45deg, var(--accent-purple), var(--accent-glow));
+border: none;
+border-radius: 6px;
+color: white;
+font-weight: bold;
+font-size: 16px;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+.btn:hover {
+opacity: 0.9;
+box-shadow: 0 0 15px rgba(157, 78, 221, 0.6);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<!-- Direct Link to Separate Admin Page -->
+<a href="LOGIN.html" target="_blank" class="top-admin-btn">Admin / Owner Portal</a>
+
+<header>
+<img src="logo.jpg.jpg" alt="DX Amethyst Logo" class="site-logo">
+<h1>DXAMETHYSTMLBBRECRUIT</h1>
+<div class="subtitle">Official Mobile Legends Squad Recruitment Portal</div>
+</header>
+
+<!-- Recruitment Form -->
+<form id="recruitmentForm" onsubmit="handleFormSubmit(event)">
+<div class="inline-group">
+<div class="form-group">
+<label for="ign">In-Game Name (IGN)</label>
+<input type="text" id="ign" required placeholder="e.g.KH E NJ">
+</div>
+<div class="form-group">
+<label for="gameId">ID & (Server)</label>
+<input type="text" id="gameId" required placeholder="e.g. 123456789 (1234)">
+</div>
+</div>
+
+<div class="inline-group">
+<div class="form-group">
+<label for="team">Select Target Squad/Team</label>
+<select id="team" required>
+<option value="">-- Select Team --</option>
+<option value="DX Nova 1">DX Nova 1</option>
+<option value="DX Nova 2">DX Nova 2</option>
+<option value="DX Nova 3">DX Nova 3</option>
+<option value="DX Nova 4">DX Nova 4</option>
+<option value="DX Vanguard 1">DX Vanguard 1</option>
+<option value="DX Vanguard 2">DX Vanguard 2</option>
+<option value="DX Vanguard 3">DX Vanguard 3</option>
+<option value="DX Vanguard 4">DX Vanguard 4</option>
+<option value="DX Solar 1">DX Solar 1</option>
+<option value="DX Solar 2">DX Solar 2</option>
+<option value="DX Execration">DX Execration</option>
+<option value="DX Emercian">DX Emercian</option>
+</select>
+</div>
+
+<div class="form-group">
+<label for="role">Primary Role / Position</label>
+<select id="role" required>
+<option value="">-- Select Role --</option>
+<option value="EXP Laner">EXP Laner</option>
+<option value="Gold Laner">Gold Laner</option>
+<option value="Mid Laner">Mid Laner</option>
+<option value="Jungler">Jungler</option>
+<option value="Roamer">Roamer</option>
+<option value="Multi-Role / Flexible">Multi-Role / Flexible</option>
+</select>
+</div>
+</div>
+
+<div class="form-group">
+<label for="handler">Select Handler / Recruiter</label>
+<select id="handler" required>
+<option value="">-- Select Assigned Person to Handle You --</option>
+<option value="Bloom">Bloom</option>
+<option value="Cassandra">Cassandra</option>
+<option value="Gaara">Gaara</option>
+<option value="Zoey">Zoey</option>
+<option value="Sammi">Sammi</option>
+</select>
+</div>
+
+<div class="inline-group">
+<div class="form-group">
+<label for="currentRank">Current Rank</label>
+<select id="currentRank" required>
+<option value="Epic">Epic</option>
+<option value="Legend">Legend</option>
+<option value="Mythic">Mythic</option>
+<option value="Mythical Honor">Mythical Honor</option>
+<option value="Mythical Glory">Mythical Glory</option>
+<option value="Mythic Immortal">Mythic Immortal</option>
+</select>
+</div>
+<div class="form-group">
+<label for="highestRank">Highest Rank Achieved</label>
+<input type="text" id="highestRank" required placeholder="e.g. Mythic Immortal 100+ Stars">
+</div>
+</div>
+
+<div class="form-group">
+<label for="accountStatusImg">Upload Account Status Screenshot (Profile/Stats)</label>
+<input type="file" id="accountStatusImg" accept="image/*" required>
+</div>
+
+<div class="form-group">
+<label for="messengerLink">Your Facebook Profile or Messenger Link</label>
+<input type="url" id="messengerLink" required placeholder="https://m.me/your.username">
+</div>
+
+<button type="submit" class="btn">Submit Application & Join Messenger</button>
+</form>
+</div>
+
+<script>
+const OFFICIAL_MESSENGER_URL = "https://m.me/";
+
+function handleFormSubmit(event) {
+event.preventDefault();
+
+const ign = document.getElementById('ign').value;
+const gameId = document.getElementById('gameId').value;
+const team = document.getElementById('team').value;
+const role = document.getElementById('role').value;
+const handler = document.getElementById('handler').value;
+const currentRank = document.getElementById('currentRank').value;
+const highestRank = document.getElementById('highestRank').value;
+const messengerLink = document.getElementById('messengerLink').value;
+const fileInput = document.getElementById('accountStatusImg');
+const file = fileInput.files[0];
+
+const reader = new FileReader();
+reader.onload = function(e) {
+const newApplication = {
+id: Date.now(),
+ign,
+gameId,
+team,
+role,
+handler,
+currentRank,
+highestRank,
+messengerLink,
+imgData: e.target.result,
+status: 'Pending'
+};
+
+// Save to persistent browser storage so admin page can retrieve it
+let storedApps = JSON.parse(localStorage.getItem('dx_applications')) || [];
+storedApps.push(newApplication);
+localStorage.setItem('dx_applications', JSON.stringify(storedApps));
+
+alert('Application Submitted Successfully! Directing you to Messenger...');
+window.open(OFFICIAL_MESSENGER_URL, '_blank');
+document.getElementById('recruitmentForm').reset();
+};
+
+if (file) {
+reader.readAsDataURL(file);
+}
+}
+</script>
+
+</body>
+</html>
